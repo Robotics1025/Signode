@@ -3,7 +3,11 @@
 import React from "react";
 import assets from "./assets.json";
 export const assetPath = (path: string) =>
-  path.startsWith("/") ? `${import.meta.env.BASE_URL}${path.slice(1)}` : path;
+  path.startsWith("/")
+    ? `${import.meta.env.PROD ? import.meta.env.BASE_URL : "/"}${path.slice(1)}`
+    : path;
+export const sitePath = (path: string) =>
+  path.startsWith("/") ? assetPath(path) : path;
 export const a = (node: keyof typeof assets, name: string) =>
   assetPath((assets[node] as Record<string, string>)[name]);
 export type GalleryItem = { image: string; title: string; description: string };
@@ -17,7 +21,7 @@ export function Button({
   light?: boolean;
 }) {
   return (
-    <a className={`button${light ? " button-light" : ""}`} href={href}>
+    <a className={`button${light ? " button-light" : ""}`} href={sitePath(href)}>
       {children}
     </a>
   );

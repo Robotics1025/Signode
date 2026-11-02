@@ -2,7 +2,15 @@ import React, { useEffect, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import "@fontsource/roboto/latin-400.css";
 import "@fontsource/roboto/latin-700.css";
-import { a, assetPath, Button, Tag, Controls, type GalleryItem } from "./ui";
+import {
+  a,
+  assetPath,
+  sitePath,
+  Button,
+  Tag,
+  Controls,
+  type GalleryItem,
+} from "./ui";
 import { Projects } from "./Projects";
 import "./styles.css";
 import "./refinements.css";
@@ -131,7 +139,7 @@ function Header({
       }}
     >
       <div className="container header-inner">
-        <a className="header-brand" href="/" aria-label="Signode home">
+        <a className="header-brand" href={sitePath("/")} aria-label="Signode home">
           <img
             src={
               about
@@ -160,7 +168,7 @@ function Header({
           {links.map(([name, href]) => (
             <a
               key={name}
-              href={href}
+              href={sitePath(href)}
               aria-current={
                 (about && name === "About Us") ||
                 (projectPage && name === "Projects") ||
@@ -215,7 +223,7 @@ function Header({
             <ul>
               {results.map(([label, href]) => (
                 <li key={label}>
-                  <a href={href} onClick={() => setSearchOpen(false)}>
+                  <a href={sitePath(href)} onClick={() => setSearchOpen(false)}>
                     {label} →
                   </a>
                 </li>
@@ -354,7 +362,7 @@ function Home({ openGallery }: { openGallery: (item: GalleryItem) => void }) {
               <p>
                 {["Technical expertise", "Our commitment", "At every stage"][i]}
               </p>
-              <a href="/about">
+              <a href={sitePath("/about")}>
                 Company Overview <img src={a("5:480", "imgAfter")} alt="" />
               </a>
             </article>
@@ -386,7 +394,7 @@ function Home({ openGallery }: { openGallery: (item: GalleryItem) => void }) {
           <div className="service-copy">
             <h3>{services[service][0]}</h3>
             <p>{services[service][1]}</p>
-            <a className="text-link" href="/about#capabilities">
+            <a className="text-link" href={sitePath("/about#capabilities")}>
               View solution{" "}
               <span
                 className="link-icon"
@@ -596,7 +604,7 @@ function Home({ openGallery }: { openGallery: (item: GalleryItem) => void }) {
           <div>
             <h3>{practiceSlides[practice][0]}</h3>
             <p>{practiceSlides[practice][1]}</p>
-            <a className="text-link" href="/about">
+            <a className="text-link" href={sitePath("/about")}>
               Find out more{" "}
               <span
                 className="link-icon"
@@ -807,7 +815,7 @@ function Footer({ about }: { about: boolean }) {
         )}
         <div className="company-footer-grid">
           <div className="company-footer-brand">
-            <a href="/" aria-label="Signode home">
+            <a href={sitePath("/")} aria-label="Signode home">
               <img
                 src={a("5:877", "imgSignodeEditableVectorLogo")}
                 alt="Signode Engineering Services Ltd"
@@ -821,11 +829,11 @@ function Footer({ about }: { about: boolean }) {
           </div>
           <nav aria-label="Footer navigation">
             <h2>Explore</h2>
-            <a href="/#services">Services</a>
-            <a href="/projects">Projects</a>
-            <a href="/about">About Us</a>
-            <a href="/about#clients">Our clients</a>
-            <a href="/contact">Contact Us</a>
+            <a href={sitePath("/#services")}>Services</a>
+            <a href={sitePath("/projects")}>Projects</a>
+            <a href={sitePath("/about")}>About Us</a>
+            <a href={sitePath("/about#clients")}>Our clients</a>
+            <a href={sitePath("/contact")}>Contact Us</a>
           </nav>
           <div className="footer-contact-details">
             <h2>Let’s talk</h2>
@@ -843,7 +851,7 @@ function Footer({ about }: { about: boolean }) {
               WhatsApp: {companyContact.whatsapp}
             </a>
             <p>Jinja &amp; Kampala, Uganda</p>
-            <a href="/contact#offices">Our offices →</a>
+            <a href={sitePath("/contact#offices")}>Our offices →</a>
           </div>
         </div>
         <div className="footer-bottom">
@@ -887,9 +895,12 @@ function Gallery({ item, close }: { item: GalleryItem; close: () => void }) {
   );
 }
 function App() {
-  const about = /^\/about(?:-us)?\/?$/.test(window.location.pathname);
-  const projectPage = /^\/projects\/?$/.test(window.location.pathname);
-  const contactPage = /^\/contact(?:s)?\/?$/.test(window.location.pathname);
+  const routePath = window.location.pathname.startsWith(import.meta.env.BASE_URL)
+    ? window.location.pathname.slice(import.meta.env.BASE_URL.length - 1)
+    : window.location.pathname;
+  const about = /^\/about(?:-us)?\/?$/.test(routePath);
+  const projectPage = /^\/projects\/?$/.test(routePath);
+  const contactPage = /^\/contact(?:s)?\/?$/.test(routePath);
   const [gallery, setGallery] = useState<GalleryItem | null>(null);
   useEffect(() => {
     document.title = `${contactPage ? "Contact Us" : about ? "About Us" : projectPage ? "Projects" : "Engineering ideas into reality"} | Signode Engineering Services Ltd`;
