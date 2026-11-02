@@ -4,7 +4,7 @@ import React from "react";
 import assets from "./assets.json";
 export const assetPath = (path: string) =>
   path.startsWith("/")
-    ? `${import.meta.env.PROD ? import.meta.env.BASE_URL : "/"}${path.slice(1)}`
+    ? `${import.meta.env.BASE_URL}${path.slice(1)}`
     : path;
 export const sitePath = (path: string) =>
   path.startsWith("/") ? assetPath(path) : path;
