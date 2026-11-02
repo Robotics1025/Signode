@@ -1,0 +1,127 @@
+{
+  "5:446": {
+    "imgVariant1": "/assets/5-446-Variant1.svg",
+    "imgVariant2": "/assets/5-446-Variant2.svg",
+    "imgSignodePage12Image021": "/assets/5-446-SignodePage12Image021.png",
+    "imgHeroProjectImage02": "/assets/5-446-HeroProjectImage02.png",
+    "imgAfter": "/assets/5-446-After.svg",
+    "imgAfter1": "/assets/5-446-After1.svg"
+  },
+  "5:480": {
+    "imgVariant3": "/assets/5-480-Variant3.svg",
+    "imgAfter": "/assets/5-480-After.svg"
+  },
+  "5:520": {
+    "imgVariant3": "/assets/5-520-Variant3.svg",
+    "imgSignodePage11Image021": "/assets/5-520-SignodePage11Image021.png",
+    "imgAfter": "/assets/5-520-After.svg"
+  },
+  "5:553": {
+    "imgVariant1": "/assets/5-553-Variant1.svg",
+    "imgVariant2": "/assets/5-553-Variant2.svg",
+    "imgSignodePage11Image021": "/assets/5-553-SignodePage11Image021.png",
+    "imgSignodePage11Image041": "/assets/5-553-SignodePage11Image041.png",
+    "imgSignodeWaterInfrastructure": "/assets/5-553-SignodeWaterInfrastructure.png",
+    "imgAfter": "/assets/5-553-After.svg",
+    "imgAfter1": "/assets/5-553-After1.svg"
+  },
+  "5:641": {
+    "imgSignodePage13Image031": "/assets/5-641-SignodePage13Image031.png",
+    "imgComponent7": "/assets/5-641-Component7.svg"
+  },
+  "5:691": {
+    "imgSignodePage14Image011": "/assets/5-691-SignodePage14Image011.png",
+    "imgSignodePage06Image011": "/assets/5-691-SignodePage06Image011.png",
+    "imgSignodePage11Image011": "/assets/5-691-SignodePage11Image011.png",
+    "imgSignodePage14Image031": "/assets/5-691-SignodePage14Image031.png"
+  },
+  "5:798": {
+    "imgVariant4": "/assets/5-798-Variant4.svg",
+    "imgVariant5": "/assets/5-798-Variant5.svg",
+    "imgVariant6": "/assets/5-798-Variant6.svg",
+    "imgVariant7": "/assets/5-798-Variant7.svg",
+    "imgVariant8": "/assets/5-798-Variant8.svg",
+    "imgBefore": "/assets/5-798-Before.svg",
+    "imgBefore1": "/assets/5-798-Before1.svg",
+    "imgBefore2": "/assets/5-798-Before2.svg",
+    "imgBefore3": "/assets/5-798-Before3.svg",
+    "imgBefore4": "/assets/5-798-Before4.svg",
+    "imgSignodeEditableVectorLogo": "/assets/5-798-SignodeEditableVectorLogo.svg"
+  },
+  "5:877": {
+    "imgVariant4": "/assets/5-877-Variant4.svg",
+    "imgVariant11": "/assets/5-877-Variant11.svg",
+    "imgVariant13": "/assets/5-877-Variant13.svg",
+    "imgAfter": "/assets/5-877-After.svg",
+    "imgAfter1": "/assets/5-877-After1.svg",
+    "imgSignodeEditableVectorLogo": "/assets/5-877-SignodeEditableVectorLogo.svg",
+    "imgDivSearchDropdownForm": "/assets/5-877-DivSearchDropdownForm.svg",
+    "imgSpanBlock": "/assets/5-877-SpanBlock.svg"
+  },
+  "51:406": {
+    "imgVariant1": "/assets/51-406-Variant1.svg",
+    "imgVariant2": "/assets/51-406-Variant2.svg",
+    "imgVariant3": "/assets/51-406-Variant3.svg",
+    "imgSignodePage08Image031": "/assets/51-406-SignodePage08Image031.png",
+    "imgAfter": "/assets/51-406-After.svg",
+    "imgAfter1": "/assets/51-406-After1.svg",
+    "imgAfter2": "/assets/51-406-After2.svg"
+  },
+  "61:1549": {
+    "imgStructuralFabricationProject": "/assets/61-1549-StructuralFabricationProject.png",
+    "imgSignodeLogo": "/assets/61-1549-SignodeLogo.svg"
+  },
+  "61:1593": {
+    "imgIndustrialInstallation": "/assets/61-1593-IndustrialInstallation.png"
+  },
+  "61:1657": {
+    "imgEngineeringProject": "/assets/61-1657-EngineeringProject.png",
+    "imgEngineeringProject1": "/assets/61-1657-EngineeringProject1.png",
+    "imgEngineeringProject2": "/assets/61-1657-EngineeringProject2.png"
+  },
+  "61:1681": {
+    "imgSignodeLogo": "/assets/61-1681-SignodeLogo.svg"
+  },
+  "53:1081": {
+    "imgVariant4": "/assets/53-1081-Variant4.svg",
+    "imgVariant1": "/assets/53-1081-Variant1.svg",
+    "imgVariant2": "/assets/53-1081-Variant2.svg",
+    "imgVariant3": "/assets/53-1081-Variant3.svg",
+    "imgVariant5": "/assets/53-1081-Variant5.svg",
+    "imgVariant6": "/assets/53-1081-Variant6.svg",
+    "imgGroup": "/assets/53-1081-Group.svg",
+    "imgVariant7": "/assets/53-1081-Variant7.svg",
+    "imgVariant8": "/assets/53-1081-Variant8.svg",
+    "imgVariant9": "/assets/53-1081-Variant9.svg",
+    "imgVariant10": "/assets/53-1081-Variant10.svg",
+    "imgVariant11": "/assets/53-1081-Variant11.svg",
+    "imgVariant12": "/assets/53-1081-Variant12.svg",
+    "imgSignodeCleanVectorLogo": "/assets/53-1081-SignodeCleanVectorLogo.svg",
+    "imgAfter": "/assets/53-1081-After.svg",
+    "imgAfter1": "/assets/53-1081-After1.svg",
+    "imgAfter2": "/assets/53-1081-After2.svg",
+    "imgSignodeEngineeringProjectPhotograph1": "/assets/53-1081-SignodeEngineeringProjectPhotograph1.png",
+    "imgSignodeEngineeringProjectPhotograph2": "/assets/53-1081-SignodeEngineeringProjectPhotograph2.png",
+    "imgDivImage": "/assets/53-1081-DivImage.png",
+    "imgDivImage1": "/assets/53-1081-DivImage1.png",
+    "imgDivImage2": "/assets/53-1081-DivImage2.png",
+    "imgSignodeEngineeringProjectPhotograph4": "/assets/53-1081-SignodeEngineeringProjectPhotograph4.png",
+    "imgDivImage3": "/assets/53-1081-DivImage3.png",
+    "imgDivImage4": "/assets/53-1081-DivImage4.png",
+    "imgDivImage5": "/assets/53-1081-DivImage5.png",
+    "imgAfter3": "/assets/53-1081-After3.svg",
+    "imgAfter4": "/assets/53-1081-After4.svg",
+    "imgAfter5": "/assets/53-1081-After5.svg",
+    "imgSpanBlock": "/assets/53-1081-SpanBlock.svg",
+    "imgAfter6": "/assets/53-1081-After6.svg",
+    "imgAfter7": "/assets/53-1081-After7.svg",
+    "imgBefore": "/assets/53-1081-Before.svg",
+    "imgBefore1": "/assets/53-1081-Before1.svg",
+    "imgBefore2": "/assets/53-1081-Before2.svg",
+    "imgBefore3": "/assets/53-1081-Before3.svg",
+    "imgBefore4": "/assets/53-1081-Before4.svg",
+    "imgSignodeEditableVectorLogo": "/assets/53-1081-SignodeEditableVectorLogo.svg",
+    "imgDivSearchDropdownForm": "/assets/53-1081-DivSearchDropdownForm.svg",
+    "imgSpanBlock1": "/assets/53-1081-SpanBlock1.svg"
+  }
+}
